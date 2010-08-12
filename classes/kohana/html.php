@@ -261,9 +261,6 @@ class Kohana_HTML {
 		// Set the stylesheet rel
 		$attributes['rel'] = 'stylesheet';
 
-		// Set the stylesheet type
-		$attributes['type'] = 'text/css';
-
 		return '<link'.HTML::attributes($attributes).' />';
 	}
 
@@ -289,9 +286,6 @@ class Kohana_HTML {
 
 		// Set the script link
 		$attributes['src'] = $file;
-
-		// Set the script type
-		$attributes['type'] = 'text/javascript';
 
 		return '<script'.HTML::attributes($attributes).'></script>';
 	}
